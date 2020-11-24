@@ -1,0 +1,79 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Workflow constructed from history 'FASTQC'",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "BT20 paired-end RNA-seq subsampled (end 1)"
+                }
+            ],
+            "label": null,
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 10,
+                "top": 10
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "93490f0c-2767-43c4-badc-6854844c9309",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input_file": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "FastQC",
+            "outputs": [
+                {
+                    "name": "html_file",
+                    "type": "html"
+                },
+                {
+                    "name": "text_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 230,
+                "top": 10
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"fastqsanger\", \"adapters\": null, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"contaminants\": null, \"input_file\": null, \"kmers\": \"7\", \"limits\": null, \"min_length\": \"\", \"nogroup\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.72+galaxy1",
+            "type": "tool",
+            "uuid": "ed7fcba5-80ff-463a-af98-7c6565712e3e",
+            "workflow_outputs": []
+        }
+    },
+    "tags": [],
+    "uuid": "d757f405-bb6c-4304-8b1d-3914b9ae91b1",
+    "version": 0
+}
